@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Services Réseaux</title>
+        <link rel="stylesheet" type="text/css" href="projets.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Pixelify+Sans&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="centre">
+            <nav>
+                <a class="navigation" href="../index.html" title="Accueil">
+                    <div>
+                        <strong>Accueil</strong>
+                    </div>
+                </a>
+                <a class="navigation" href="LAN.html" title="Projet LAN">
+                    <div>
+                        <strong>Projet LAN</strong>
+                    </div>
+                <a class="navigation" href="Portfolio.html" title="Projet Portfolio">
+                    <div>
+                        <strong>Projet Portfolio</strong>
+                    </div>
+                <a class="navigation" href="FiltrageLineaire.html" title="Filtrage Lineaire">
+                    <div>
+                        <strong>Filtrage Lineaire</strong>
+                    </div>
+                </a>
+                <a class="navigation" href="Telephonie.html" title="Téléphonie">
+                    <div>
+                        <strong>Projet Téléphonie</strong>
+                    </div>
+                </a>
+                <a class="navigation" href="ApplicationCoffreFort.html" title="Application-Coffre Fort">
+                    <div>
+                        <strong>Application-Coffre Fort</strong>
+                    </div>
+                </a>
+            </nav>
+            <h1 class="titre">Mise ne place de Services Réseaux</h1>
+            <section class="principal">
+                <div class="text-content">
+                    <img class="imgPrinc" src="../theme/gfx/ServicesResaux_messagerie.png" alt="Projet LAN">
+                    <p class="presPass">
+                        L’objectif était de mettre en place différents services réseau comme un serveur de transfert fichiers <strong>FTP</strong>, un serveur de <strong>messagerie</strong>, les services <strong>DNS</strong>, <strong>DHCP</strong> et <strong>SSH</strong>.
+                        Par groupe de deux sur 5 séances de trois heures, nous avons configuré ces services sur un serveur Linux de manière semi encadré.
+                        Nous avons utilisé des machines virtuelles pour simuler un réseau local, ce qui nous a permis de tester les services sans risque d'interférer avec un réseau réel. 
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                        Le projet a débuté par la mise en place du service FTP via le serveur vsftpd. Nous avons créé et configuré des utilisateurs, ajusté les permissions d’accès aux répertoires, et testé les connexions à l’aide de FileZilla ainsi que du terminal. 
+                        Nous avons également utilisé Wireshark pour analyser les trames échangées entre client et serveur, ce qui nous a permis de mieux comprendre les étapes d’authentification et de transfert.
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                        Ensuite, nous avons déployé le service DHCP avec isc-dhcp-server. Nous avons appris à définir une plage d’adresses IP dynamiques, configurer les passerelles par défaut et observer les échanges DHCP (DISCOVER, OFFER, REQUEST, ACK) via Wireshark. 
+                        Nous avons aussi exploré le fonctionnement avec plusieurs serveurs DHCP sur un même réseau et configuré un relais DHCP pour distribuer les adresses à travers un routeur.
+                    </p>
+                    <img class="imgPrinc" src="../theme/gfx/ServicesResaux_dhcp.png" alt="Projet LAN">
+                </div>
+                <div class="text-content">
+                    <img class="imgPrinc" src="../theme/gfx/ServicesResaux_pkt.png" alt="Projet LAN">
+                    <p class="presPass">
+                        Pour le service DNS, nous avons utilisé Cisco Packet Tracer afin de simuler différents scénarios : résolution locale de noms, interconnexion entre deux domaines, introduction d’un serveur root DNS, puis hiérarchisation complète avec délégation de zone. 
+                        Cela nous a permis de comprendre la logique d’un DNS distribué et son rôle central dans les communications réseau.
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                        Nous avons aussi installé et sécurisé un accès distant avec SSH, en utilisant openssh-server. Après avoir configuré les utilisateurs, nous avons testé les connexions par mot de passe, puis mis en place l’authentification par clés. 
+                        Nous avons également expérimenté les tunnels SSH pour chiffrer le trafic HTTP entre un client et un serveur Apache. 
+                        Cette partie a renforcé notre compréhension de la sécurité réseau.
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                        Enfin, nous avons mis en place un serveur de messagerie basé sur Postfix (SMTP) et Dovecot (POP3). Après avoir configuré les comptes utilisateurs, nous avons réalisé des tests d’envoi et de réception de mails via Telnet. 
+                        Nous avons aussi appris à vérifier les ports d’écoute, configurer les services, et accéder aux boîtes mail stockées sur le serveur.
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                        Ce projet m’a permis de développer deux compétences essentielles : d’une part, la capacité d’apprentissage autonome, qui m’a donné une meilleure maîtrise des outils d’administration réseau ; 
+                        d’autre part, la capacité de résolution de problèmes techniques, qui a renforcé ma compréhension des protocoles et services réseau fondamentaux.
+                    </p>
+                </div>
+            </section>
+            <a class="retour" href="../index.html">retour</a>
+            <footer class="piedDePage">
+                <p>
+                    Vassili MEGY : IUT Clermont Auvergne 2024/2025
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

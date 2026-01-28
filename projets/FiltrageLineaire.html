@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Filtrage Lineaire</title>
+        <link rel="stylesheet" type="text/css" href="projets.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Pixelify+Sans&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="centre">
+            <nav>
+                <a class="navigation" href="../index.html" title="Accueil">
+                    <div>
+                        <strong>Accueil</strong>
+                    </div>
+                </a>
+                <a class="navigation" href="LAN.html" title="Projet LAN">
+                    <div>
+                        <strong>Projet LAN</strong>
+                    </div>
+                <a class="navigation" href="Portfolio.html" title="Projet Portfolio">
+                    <div>
+                        <strong>Projet Portfolio</strong>
+                    </div>
+                </a>
+                <a class="navigation" href="ServicesReseaux.html" title="Services Réseaux">
+                    <div>
+                        <strong>Services Réseaux</strong>
+                    </div>
+                </a>
+                <a class="navigation" href="Telephonie.html" title="Téléphonie">
+                    <div>
+                        <strong>Projet Téléphonie</strong>
+                    </div>
+                </a>
+                <a class="navigation" href="ApplicationCoffreFort.html" title="Application-Coffre Fort">
+                    <div>
+                        <strong>Application-Coffre Fort</strong>
+                    </div>
+                </a>
+            </nav>
+            <h1 class="titre">Filtrage linéaire</h1>
+            <section class="principal">
+                <div class="text-content">
+                    <img class="imgPrinc" src="../theme/gfx/Montage(1).png" alt="Projet LAN">
+                    <p class="presPass">
+                        L’objectif de ce projet était de comprendre le fonctionnement des radios, en particulier le processus de filtrage des fréquences. 
+                        Par équipes de trois, sur quatre séances de quatre heures en autonomie, nous avons mené des recherches et monté des circuits électriques pour les étudier. 
+                        Nous avons utilisé des composants tels qu’un générateur de tension, une résistance, une inductance et un condensateur, 
+                        essentiels pour concevoir un filtre électronique. 
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                        Nous avons choisi d’étudier un circuit linéaire RLC composé d’une résistance de 32 Ω, d’un condensateur de 5 µF et d’une inductance de 0,1 H. 
+                        Cependant, dès les premières mesures, nous avons constaté que les valeurs obtenues étaient erronées par rapport aux attentes théoriques. 
+                        Après analyse, nous avons identifié que la résistance interne du générateur, estimée à environ 50 Ω, 
+                        perturbait le fonctionnement du circuit en modifiant les mesures. 
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                        Pour résoudre ce problème, nous avons intégré un suiveur de tension. Ce dispositif, basé sur un amplificateur opérationnel, 
+                        permet de transmettre un signal en maintenant la même tension d’entrée et de sortie, tout en isolant électriquement les composants amont et aval. 
+                        En annulant l’impact de la résistance interne du générateur, le suiveur a permis d’obtenir des mesures plus précises. Une fois le montage corrigé, 
+                        nous avons réalisé plusieurs mesures sur une plage de fréquences pour déterminer la fréquence filtrée par le circuit. 
+                        Les résultats obtenus correspondaient à nos calculs théoriques, avec une fréquence de résonance autour de 220 Hz.
+                    </p>
+                    <img class="imgPrinc" src="../theme/gfx/Montage Photo(1).jpg" alt="Projet LAN">
+                </div>
+                <div class="text-content">
+                    <img class="imgPrinc" src="../theme/gfx/graph.png" alt="Projet LAN">
+                    <p class="presPass">
+                        Cependant, en comparant notre graphique expérimental au modèle théorique, nous avons observé un filtrage peu marqué et un facteur de qualité trop faible, 
+                        ce qui réduisait l’efficacité du circuit. Le comportement mesuré ressemblait davantage à celui d’un circuit avec une résistance de 50 Ω qu’à notre montage prévu avec 32 Ω. 
+                        Cela suggérait un défaut dans notre suiveur, combiné à des incertitudes liées à la qualité des composants, tels que le condensateur et l’inductance. 
+                        En conclusion, nous avons déterminé que le matériel mis à disposition était trop ancien et peu précis pour garantir des résultats fiables. 
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                        Ce projet nous a néanmoins permis de développer des compétences clés. 
+                        Nous avons amélioré notre capacité à analyser et résoudre des problèmes techniques en identifiant des sources d’erreur dans un circuit et en mettant en œuvre des solutions adaptées, 
+                        comme l’intégration d’un suiveur. Nous avons également renforcé notre aptitude à travailler en équipe sur un projet complexe et à gérer des contraintes techniques de manière autonome. 
+                        Malgré les limites matérielles, ce travail a enrichi notre compréhension des circuits électroniques et des principes du filtrage des fréquences. 
+                    </p>
+                </div>
+            </section>
+            <a class="retour" href="../index.html">retour</a>
+            <footer class="piedDePage">
+                <p>
+                    Vassili MEGY : IUT Clermont Auvergne 2024/2025
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projet Téléphonie</title>
+        <link rel="stylesheet" type="text/css" href="projets.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Pixelify+Sans&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="centre">
+            <nav>
+                <a class="navigation" href="../index.html" title="Accueil">
+                    <div>
+                        <strong>Accueil</strong>
+                    </div>
+                </a>
+                <a class="navigation" href="LAN.html" title="Projet LAN">
+                    <div>
+                        <strong>Projet LAN</strong>
+                    </div>
+                <a class="navigation" href="Portfolio.html" title="Projet Portfolio">
+                    <div>
+                        <strong>Projet Portfolio</strong>
+                    </div>
+                <a class="navigation" href="FiltrageLineaire.html" title="Filtrage Lineaire">
+                    <div>
+                        <strong>Filtrage Lineaire</strong>
+                    </div>
+                </a>
+                <a class="navigation" href="ServicesReseaux.html" title="Services Réseaux">
+                    <div>
+                        <strong>Services Réseaux</strong>
+                    </div>
+                </a>
+                <a class="navigation" href="ApplicationCoffreFort.html" title="Application-Coffre Fort">
+                    <div>
+                        <strong>Application-Coffre Fort</strong>
+                    </div>
+                </a>
+            </nav>
+            <h1 class="titre">Gestion d'un serveur téléphonique</h1>
+            <section class="principal">
+                <div class="text-content">
+                    <img class="imgPrinc" src="../theme/gfx/telephonie_img2.png" alt="Projet LAN">
+                    <p class="presPass">
+                        L’objectif de ce projet était de configurer un système de téléphonie d’entreprise à l’aide de la solution logicielle Unify OpenScape Business S. 
+                        Réalisé en groupe de trois dans le cadre de 5 TP de téléphonie à l’IUT, ce projet a été conduit de manière semi-autonome avec un appui méthodologique fourni par des assistants de configuration et une documentation en ligne.
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                        La première étape a consisté à restaurer une configuration de base sur le CallServer, puis à procéder au câblage des téléphones IP, alimentés via des switchs PoE. 
+                        Ensuite, nous avons défini les abonnés et associé différents types de terminaux (téléphones propriétaires, SIP, softphones) en adaptant les paramètres de signalisation (TFA ou SIP). 
+                        J’ai personnellement configuré un téléphone SIP et un softphone, en m’assurant de la bonne correspondance des identifiants et des codecs utilisés, tout en réalisant des captures d’échanges via Wireshark pour analyser la signalisation SIP et le trafic RTP.
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                        Nous avons également mis en place un Trunk SIP pour établir des communications avec l’extérieur via un fournisseur de services (ITSP). 
+                        Ce point a représenté un défi technique, notamment pour assurer l’affichage du bon numéro et pour configurer les appels entrants avec des numéros SDA. 
+                        La gestion des licences s’est avérée critique pour que les appels sortants/internes fonctionnent correctement.
+                    </p>
+                    <img class="imgPrinc" src="../theme/gfx/telephonie_img3.png" alt="Projet LAN">
+                </div>
+                <div class="text-content">
+                    <img class="imgPrinc" src="../theme/gfx/telephonie_img1.png" alt="Projet LAN">
+                    <p class="presPass">
+                        La configuration de services téléphoniques avancés comme les groupes d’appels, le renvoi conditionnel, la messagerie vocale, ainsi que l’intégration d’un assistant logiciel comme MyPortal a permis de mieux appréhender les usages professionnels d’un système de téléphonie unifiée. 
+                        Par exemple, MyPortal offre des fonctionnalités telles que la gestion de présence, le click-to-call, le journal d’appels et la messagerie instantanée.
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                        Enfin, nous avons exploré des fonctions avancées comme la messagerie unifiée (envoi de mail automatique lors de la réception d’un message vocal), l’intégration de téléphones mobiles, et la gestion multi-sites, illustrant comment une solution VoIP peut s’adapter à des contextes professionnels variés.
+                    </p>
+                </div>
+                <div class="text-content">
+                    <p class="presPass">
+                    Ce projet m’a permis de développer deux compétences clés : ma capacité à appréhender des systèmes complexes de manière autonome, et ma rigueur dans la configuration de réseaux et de services téléphoniques. 
+                    Grâce à ce TP, j’ai renforcé ma compréhension des architectures VoIP modernes et de leur intégration dans les infrastructures informatiques des entreprises.                    
+                    </p>
+                </div>
+            </section>
+            <a class="retour" href="../index.html">retour</a>
+            <footer class="piedDePage">
+                <p>
+                    Vassili MEGY : IUT Clermont Auvergne 2024/2025
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

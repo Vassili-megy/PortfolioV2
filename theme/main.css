@@ -1,0 +1,40 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+section {
+  margin-top: 5vh;
+  scroll-margin-top: 70px;
+}
+
+.formationFlexBox {
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0px;
+  background-color: rgb(249, 249, 249);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+}
+
+.titre {
+  display: flex;
+  justify-content: center;
+}
+
+/* -----------------------------Header----------------------------- */
+header {
+  min-height: 100vh;
+  background: url(gfx/fondPortefolio.jpg) bottom;
+  background-size: cover;
+}
+header > div {
+  width: 80%;
+  color: whitesmoke;
+}
+
+header > div > * {
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+

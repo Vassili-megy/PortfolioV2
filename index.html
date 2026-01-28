@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Vassili MEGY" description="Portfolio" />
+    <title>Portfolio_Vassili_MEGY</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="theme/main.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Vassili MEGY</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Vassili MEGY
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutMe">À propos de moi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#formations">Formations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Compétences</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Voir plus
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">                   
+                    <li><a class="dropdown-item" href="#languages">Langues</a></li>
+                    <li><a class="dropdown-item" href="#qualities">Qualités</a></li>
+                    <li><a class="dropdown-item" href="#others">Divers</a></li>
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Home -->
+      <section id="home" style="display: flex; justify-content: flex-start; align-items: center; height: 100vh;">
+        <div style="margin-left: 10%;">
+          <h1>Vassili MEGY</h1>
+          <p>Alternant chez Resintel Ingénieurie Télécommunications</p> 
+          <!-- Étudiant en deuxième année du BUT Réseaux et Télécommunications -->
+          <div class="socialnetwork">
+            <a
+              href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BkJ8oFTA3RluNE0vUJSKVcg%3D%3D"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i>
+              <span>Linkedin</span></a
+            >
+          </div>
+
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- about me -->
+      <section id="aboutMe" style="min-height: 95vh;">
+        <div class="card m-3 aboutMeFlexBox">
+          <div class="row g-0">
+            <div class="col-md-4 d-none d-md-flex align-items-center justify-content-center">
+              <img
+          src="theme/gfx/Vassili_MEGY.jpg"
+          class="img-fluid rounded-3"
+          alt="Photo de Vassili MEGY"
+          id="personalPhoto"
+          style="max-height: 80vh; object-fit: cover;"
+              />
+            </div>
+            <div class="col-md-8" style="padding: 1rem">
+              <div class="card-body">
+          <h2><strong>À propos de moi</strong></h2>
+          <p>
+            Je m’appelle <strong>Vassili MEGY</strong>, je suis depuis octobre 2025 alternant chez Resintel Ingénieurie Télécommunications et
+            également en deuxième année du <strong>BUT (Bachelor Universitaire de
+            Technologie) Réseaux et Télécommunications parcours cybersécurité</strong> à Clermont-Ferrand.
+            Passionné par les sciences et les nouvelles technologies, j’ai
+            orienté mon parcours vers un domaine alliant informatique,
+            réseaux et techniques de communication, avec l’ambition de
+            construire une carrière dans ce secteur en constante évolution.
+          </p>
+          <p>
+            Après avoir obtenu mon baccalauréat général avec les spécialités
+            <strong>Mathématiques</strong>,
+            <strong>Physique-Chimie</strong> et la mineure
+            <strong>Littérature Anglaise</strong>, ainsi qu’une option
+            <strong>Mathématiques Expertes</strong>, j’ai entrepris des
+            études en licence de Mathématiques et Physique à
+            Clermont-Ferrand. Cette première expérience m’a permis de
+            renforcer ma curiosité pour les disciplines scientifiques, mais
+            aussi de mieux définir mes aspirations professionnelles.
+          </p>
+          <p>
+            Suite à ma licence de Physiques, j’ai choisi de me réorienter
+            vers un domaine qui correspond davantage à mes intérêts pour les
+            nouvelles technologies et l’innovation : les
+            <strong>Réseaux et Télécommunications</strong>. Cette formation,
+            axée sur l’informatique et la communication, me permet également
+            de bénéficier de l’alternance pour acquérir une expérience
+            professionnelle tout en consolidant mes compétences académiques.
+          </p>
+          <p>
+            Grâce à mon parcours, j’ai développé des <strong>compétences</strong> variées :
+            une base solide en mathématiques et en physique, une familiarité
+            avec les langages de
+            programmation tels que Python, ainsi qu’une
+            capacité d’adaptation à des environnements d’apprentissage
+            exigeants. Mon intérêt pour l’informatique, combiné à mes
+            expériences pratiques et mon goût pour les challenges
+            techniques me rendent particulièrement motivé pour contribuer à
+            des projets innovants dans le domaine des réseaux et
+            télécommunications.
+          </p>
+          <p>
+            Je m’efforce de consolider mes compétences techniques pour
+            m’insérer durablement dans le secteur des nouvelles
+            technologies. Mon ambition est de participer à des projets qui
+            transforment la manière dont les individus et les entreprises
+            communiquent, en explorant des domaines tels que la
+            cybersécurité ou l’administration de réseaux. 
+          </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- formations -->
+      <section id="formations" style="min-height: 95vh;">
+        <h1 class="titre">Formations</h1>
+        <div class="d-flex m-3 formationFlexBox" >
+          <div class="flex-shrink-0">
+            <img src="theme/gfx/IUT.jpg" alt="photo du batiment" class="batiment d-none d-md-block" style="width: 25rem; height: auto;" />
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h3 style="text-align: center;">BUT Réseau et Télécom</h3>
+            <h4 style="text-align: center;">
+              <i><small>Université Clermont-Auvergne depuis 2024</small></i>
+            </h4>
+            <ul>
+              <li>
+                j'ai choisi cette formation qui est davantage orientée vers
+                l’informatique. car elle me permet d'étudier la programmation
+                mais également de suivre un parcours en alternance, ce qui offre
+                une voie professionnelle plus rapide et plus sécurisée qu’une
+                licence classique.
+              </li>
+              <li>
+                j'ai également été attiré par les travaux pratiques et aux
+                projets proposés, qui m’ont déjà beaucoup aidé et continueront à
+                m’aider dans les années à venir. Ces activités sont précieuses
+                pour l’expérience qu’elles nous apportent, mais surtout pour les
+                résultats concrets qu’elles permettent d’obtenir et pour les
+                éventuelles difficultés que l’on peut rencontrer, au-delà de la
+                théorie.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex m-3 formationFlexBox">
+          <div class="flex-grow-1 ms-3">
+            <h3 style="text-align: center;">Licence Mathématiques-Physique</h3>
+            <h4 style="text-align: center;">
+              <i><small>2022-2024 Université Clermont-Auvergne</small></i>
+            </h4>
+            <ul>
+              <li>
+                J’ai suivi pendant deux ans la licence en Mathématiques et
+                Physique. Cette expérience m’a permis d’approfondir mes
+                compétences scientifiques de manière globale.
+              </li>
+              <li>
+                J’ai exploré des domaines variés, allant des algorithmes à la
+                programmation, en passant par des travaux pratiques. Ces cours
+                m’ont également appris à réaliser des calculs plus efficaces et
+                précis grâce à des outils et méthodologies modernes.
+              </li>
+            </ul>
+          </div>
+          <div class="flex-shrink-0">
+            <img
+              src="theme/gfx/licence.jpg"
+              alt="photo du batiment"
+              class="batiment d-none d-md-block"
+              style="width: 25rem; height: auto;"
+            />
+          </div>
+        </div>
+        <div class="d-flex m-3 formationFlexBox">
+          <div class="flex-shrink-0">
+            <img
+              src="theme/gfx/lycee.jpg"
+              alt="photo du batiment"
+              class="batiment d-none d-md-block"
+              style="width: 25rem; height: auto;"
+            />
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h3 style="text-align: center;">baccalauréat</h3>
+            <h4 style="text-align: center;">
+              <i><small>2019-2022 Lycée Boissy d'Anglas</small></i>
+            </h4>
+            <ul>
+              <li>
+                J’ai obtenu mon baccalauréat général au lycée Boissy d’Anglas à
+                Annonay (Ardèche), avec les spécialités
+                <strong>Mathématiques</strong>,
+                <strong>Physique-Chimie</strong> en Terminale, et
+                <strong>Littérature Anglaise</strong> en première. J’ai
+                également suivi l’option
+                <strong>Mathématiques Expertes</strong> pour approfondir mes
+                compétences dans ce domaine exigeant et poursuivre mes études
+                avec assurance.
+              </li>
+              <li>
+                C'est ici que le choix du domaine dans lequel je travaillerais
+                plus tard a été fait et développé.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- projects -->
+      <section id="projects" style="min-height: 95vh;">
+        <h1 class="titre">Projets</h1>
+        <div id="projectsCarousel" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+          <div class="carousel-inner">
+        <!-- Projet 1 -->
+        <div class="card col-md-3 col-sm-6 mx-2" style="box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);">
+          <img src="theme/gfx/projet_lan_presentation.png" class="card-img-top" alt="lan" />
+          <div class="card-body">
+        <h5 class="card-title">Mise en place d’un réseau local (LAN)</h5>
+        <p class="card-text" style="margin: 10px;">Ce projet avait pour objectif de configurer un réseau local fonctionnel connecté à Internet, 
+          en mettant en pratique des concepts fondamentaux des réseaux. À travers plusieurs séances de travaux pratiques, 
+          j’ai acquis des compétences techniques essentielles, telles que l’adressage IP, la configuration d’un routeur logiciel, 
+          et le dépannage d’erreurs complexes. 
+          Ce projet illustre ma capacité à appliquer des connaissances théoriques à des cas concrets et à résoudre des problèmes de manière méthodique.</p>
+        <a href="projets/LAN.html" class="btn btn-primary">En savoir plus</a>
+          </div>
+        </div>
+        <!-- Projet 2 -->
+        <div class="card col-md-3 col-sm-6 mx-2" style="box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);">
+          <img src="theme/gfx/projet_portfolio.png" class="card-img-top" alt="portfolio" />
+          <div class="card-body">
+        <h5 class="card-title">Création d’un portfolio web</h5>
+        <p class="card-text" style="margin: 10px;">La création de ce portfolio professionnel a été l’occasion d’approfondir mes compétences en développement web,
+          en combinant HTML, CSS et la bibliothèque Bootstrap. Ce projet m’a permis de concevoir une plateforme structurée et esthétique, 
+          tout en apprenant à gérer des conflits entre différentes technologies et à optimiser la présentation des contenus. 
+          Il reflète mon aptitude à travailler de manière autonome et à produire des résultats alignés sur des objectifs précis.</p>
+        <a href="projets/Portfolio.html" class="btn btn-primary">En savoir plus</a>
+          </div>
+        </div>
+        
+        <!-- Projet 6 -->
+        <!-- <div class="card col-md-3 col-sm-6 mx-2" style="box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);">
+          <img src="theme/gfx/Android_Studio_Logo_(2023).svg.png" class="card-img-top" alt="bash" />
+          <div class="card-body">
+        <h5 class="card-title">Mise ne place de Services Réseaux</h5>
+        <p class="card-text" style="margin: 10px;">La configuration de services réseau sous Linux m’a permis de renforcer mes compétences en administration système et en compréhension des protocoles. En déployant des services comme FTP, DNS, DHCP, SSH et un serveur de messagerie, j’ai appris à assurer la connectivité, la sécurité et la fiabilité d’un réseau local. 
+          Ce projet a été l’occasion de travailler en conditions proches du réel, de résoudre des erreurs techniques variées, et de structurer des configurations complexes. 
+          Il illustre ma capacité à appliquer des connaissances théoriques à des environnements concrets et à progresser de manière autonome.</p>
+        <a href="projets/ApplicationCoffreFort.html" class="btn btn-primary">En savoir plus</a>
+          </div>
+        </div> -->
+        <!-- Projet vide pour alignement -->
+        <div class="card col-md-3 col-sm-6 mx-2" style="visibility: hidden;"></div>
+          </div>
+        </div>
+          </div>
+          <!-- Carousel controls -->
+          <button id="projectsPrev" class="carousel-control-prev" type="button" style="left: 0; width: 70px; height: 70px; top: 45%; background: #222; border-radius: 50%; border: 4px solid #fff; z-index: 2; display: flex; align-items: center; justify-content: center;">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1); width: 40px; height: 40px;"></span>
+        <span class="visually-hidden">Précédent</span>
+          </button>
+          <button id="projectsNext" class="carousel-control-next" type="button" style="right: 0; width: 70px; height: 70px; top: 45%; background: #222; border-radius: 50%; border: 4px solid #fff; z-index: 2; display: flex; align-items: center; justify-content: center;">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1); width: 40px; height: 40px;"></span>
+        <span class="visually-hidden">Suivant</span>
+          </button>
+          <script>
+        // Custom JS for 1-card-at-once, 1-by-1 scroll, 1-card on mobile, 1-card on tablette, 3-cards on desktop
+        document.addEventListener('DOMContentLoaded', function () {
+          const carousel = document.getElementById('projectsCarousel');
+          const prevBtn = document.getElementById('projectsPrev');
+          const nextBtn = document.getElementById('projectsNext');
+          const slides = carousel.querySelectorAll('.carousel-item');
+          // Gather all project cards
+          let cards = [];
+          slides.forEach(slide => {
+        slide.querySelectorAll('.card').forEach(card => {
+          if (card.style.visibility !== 'hidden') cards.push(card.outerHTML);
+        });
+          });
+          let current = 0;
+
+          function getCardsPerView() {
+        // 1 card for mobile (<992px), 3 for desktop (>=992px)
+        if (window.innerWidth < 992) return 1;
+        return 3;
+          }
+
+          function renderProjects() {
+        let cardsPerView = getCardsPerView();
+        let html = '<div class="row justify-content-around align-items-center">';
+        for (let i = 0; i < cardsPerView; i++) {
+          let idx = (current + i) % cards.length;
+          html += cards[idx];
+        }
+        html += '</div>';
+        slides[0].classList.add('active');
+        slides[0].innerHTML = html;
+        if (slides[1]) slides[1].classList.remove('active');
+          }
+
+          renderProjects();
+
+          prevBtn.onclick = function () {
+        let cardsPerView = getCardsPerView();
+        current = (current - 1 + cards.length) % cards.length;
+        renderProjects();
+          };
+          nextBtn.onclick = function () {
+        let cardsPerView = getCardsPerView();
+        current = (current + 1) % cards.length;
+        renderProjects();
+          };
+
+          // Update on resize for responsiveness
+          window.addEventListener('resize', function () {
+        renderProjects();
+          });
+        });
+          </script>
+        </div>
+      </section>
+      <!-- skills -->
+      <section id="skills" style="min-height: 95vh;">
+        <!-- * Compétences -->
+        <section id="skills">  
+          <h1 class="titre">Compétences</h1>
+          <div class="row justify-content-evenly">
+            <div class="d-flex mr-3 formationFlexBox col-md-5 flex-column flex-md-row"> <!-- * Cybercécurité -->
+              <!-- Progress bar always before title for mobile, right for desktop -->
+              
+            <div class="d-flex ml-3 formationFlexBox col-md-5 flex-column flex-md-row"> <!-- * Réseau -->
+              <!-- Progress bar always before title for mobile, left for desktop -->
+              <div class="w-100 d-block d-md-none mb-2">
+                <div class="container">
+                  <div
+                    class="custom-progress" 
+                    style="--percent: 80; --color: #ffe047"
+                  >
+                    <h3>80<span>%</span></h3>
+                    <h4>Réseaux</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink-0 d-none d-md-block">
+                <div class="container">
+                  <div
+                    class="custom-progress" 
+                    style="--percent: 80; --color: #ffe047"
+                  >
+                    <h3>80<span>%</span></h3>
+                    <h4>Réseaux</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h3 style="text-align: center;">Réseau</h3>
+                <ul>
+                  <li>
+                    Attribution d’adresses IP, configuration des sous-réseaux et des passerelles pour assurer la communication entre appareils.
+                  </li>
+                  <li>
+                    Configuration de service réseau tels que DHCP, DNS et HTTP.
+                  </li>
+                  <li>
+                    Mise en place de machines virtuelles pour simuler des environnements.
+                  </li>
+                  <li>
+                    Identification et résolution des problèmes de connectivité, comme des erreurs d’adressage ou des configurations incorrectes.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex mr-3 formationFlexBox col-md-5 flex-column flex-md-row"> <!-- * Programmation -->
+              <!-- Progress bar always before title for mobile, right for desktop -->
+              <div class="w-100 d-block d-md-none mb-2">
+                <div class="container">
+                  <div
+                    class="custom-progress"
+                    style="--percent: 90; --color: #2ccde9"
+                  >
+                    <h3>90<span>%</span></h3>
+                    <h4>python</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink-0 d-none d-md-block">
+                <div class="container">
+                  <div
+                    class="custom-progress"
+                    style="--percent: 90; --color: #2ccde9"
+                  >
+                    <h3>90<span>%</span></h3>
+                    <h4>python</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h3 style="text-align: center;">Programmation</h3>
+                <ul>
+                  <li>
+                    Utilisation de différents langages de programmation, notamment Python, PHP, Bash et Matlab.
+                  </li>
+                  <li>
+                    Maîtrise des concepts fondamentaux comme les boucles, les conditions, les fonctions et les classes.
+                  </li>
+                  <li>
+                    Création de scripts pour effectuer des tâches simples comme le traitement de données ou l’automatisation de flux de travail.
+                  </li>
+                  <li>
+                    Utilisation de structures de données comme les listes, les dictionnaires et les ensembles.
+                  </li>
+                </ul>
+              </div>
+            </div>
+                        <div class="d-flex mr-3 formationFlexBox col-md-5 flex-column flex-md-row"> <!-- * Telecommunication -->
+              <!-- Progress bar always before title for mobile, right for desktop -->
+              <div class="w-100 d-block d-md-none mb-2">
+                <div class="container">
+                  <div
+                    class="custom-progress"
+                    style="--percent: 78; --color: #fb297b"
+                  >
+                    <h3>78<span>%</span></h3>
+                    <h4>télécom</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink-0 d-none d-md-block">
+                <div class="container">
+                  <div
+                    class="custom-progress"
+                    style="--percent: 78; --color: #fb297b"
+                  >
+                    <h3>78<span>%</span></h3>
+                    <h4>télécom</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h3 style="text-align: center;">Télécommunication</h3>
+                <ul>
+                  <li>
+                    Expérience avec des appareils tels que les oscilloscopes, les générateurs de signaux, les résistances et les condensateurs.
+                  </li>
+                  <li>
+                    Application des principes électriques pour identifier et corriger les erreurs dans les montages.
+                  </li>
+                  <li>
+                    Capacité à rédiger des rapports techniques détaillés pour présenter les résultats de projets en réseaux et télécommunications.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="d-flex ml-3 formationFlexBox col-md-5 flex-column flex-md-row"> <!-- * Developpement web -->
+              <!-- Progress bar always before title for mobile, left for desktop -->
+              <div class="w-100 d-block d-md-none mb-2">
+                <div class="container">
+                  <div
+                    class="custom-progress"
+                    style="--percent: 69; --color: #43f94a"
+                  >
+                    <h3>69<span>%</span></h3>
+                    <h4>Html</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink-0 d-none d-md-block">
+                <div class="container">
+                  <div
+                    class="custom-progress"
+                    style="--percent: 69; --color: #43f94a"
+                  >
+                    <h3>69<span>%</span></h3>
+                    <h4>Html</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h3 style="text-align: center;">Développement Web</h3>
+                <ul>
+                  <li>
+                    Création de pages web structurées et stylisées avec une mise en page responsive.
+                  </li>
+                  <li>
+                    Utilisation de la bibliothèque Bootstrap pour concevoir des interfaces modernes et adaptatives.
+                  </li>
+                  <li>
+                    Développement autonome de sites web personnels et de projets académiques.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!-- * Langues -->
+        <!-- * Qualités -->
+        <script>
+          // Synchronise les collapses mobile/tablette et desktop
+          document.addEventListener('DOMContentLoaded', function () {
+            function syncCollapse(triggerId, mobileId) {
+              var trigger = document.getElementById(triggerId);
+              var mobile = document.getElementById(mobileId);
+              if (!trigger || !mobile) return;
+              trigger.addEventListener('show.bs.collapse', function () {
+                if (window.innerWidth < 992) {
+                  var bsCollapse = bootstrap.Collapse.getOrCreateInstance(mobile);
+                  bsCollapse.show();
+                }
+              });
+              trigger.addEventListener('hide.bs.collapse', function () {
+                if (window.innerWidth < 992) {
+                  var bsCollapse = bootstrap.Collapse.getOrCreateInstance(mobile);
+                  bsCollapse.hide();
+                }
+              });
+              mobile.addEventListener('show.bs.collapse', function () {
+                if (window.innerWidth >= 992) {
+                  var bsCollapse = bootstrap.Collapse.getOrCreateInstance(trigger);
+                  bsCollapse.show();
+                }
+              });
+              mobile.addEventListener('hide.bs.collapse', function () {
+                if (window.innerWidth >= 992) {
+                  var bsCollapse = bootstrap.Collapse.getOrCreateInstance(trigger);
+                  bsCollapse.hide();
+                }
+              });
+            }
+            syncCollapse('rigueurCollapse', 'rigueurCollapseMobile');
+            syncCollapse('perseveranceCollapse', 'perseveranceCollapseMobile');
+            syncCollapse('autonomieCollapse', 'autonomieCollapseMobile');
+            syncCollapse('equipeCollapse', 'equipeCollapseMobile');
+          });
+        </script>
+      <!-- others -->
+    </main>
+    <footer>
+      <!-- contact -->
+      <section id="contact">
+        <div
+          class="d-flex flex-column align-items-center"
+          style="
+            background-color: #aaaaaa;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            max-width: 90%;
+            margin: 5vh auto;
+          "
+        >
+          <p class="mb-1">Vous pouvez également consulter mon CV en ligne :</p>
+          <a
+            class="btn btn-secondary"
+            href="theme/CV_Vassili_MEGY.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            Mon CV (PDF)
+          </a>
+        </div>
+        <div
+          class="d-flex flex-column align-items-center"
+          style="
+            background-color: #aaaaaa;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            max-width: 90%;
+            margin: 0 auto;
+          "
+        >
+          <h1 class="titre">Contact</h1>
+          <p>Vous pouvez me contacter par mail à l'adresse suivante :</p>
+          <a class="btn btn-secondary" href="mailto:vassili.megy@etu.uca.fr"
+            >vassili.megy@etu.uca.fr</a
+          >
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
