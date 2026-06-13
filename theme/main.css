@@ -38,3 +38,103 @@ h1 {
   font-size: 4rem;
 }
 
+div.socialnetwork a {
+  /* partie réseaux sociaux */
+  color: #000000;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+div.socialnetwork a:hover {
+  color: red;
+}
+
+div.socialnetwork a span {
+  display: none;
+}
+
+/* -----------------------------Barres de compétences----------------------------- */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.container .custom-progress {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #fff;
+  background: #444 linear-gradient(to right, transparent 50%, var(--color) 0);
+}
+
+.container .custom-progress h3 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.container .custom-progress h3 span {
+  font-size: 0.65em;
+  font-weight: 400;
+}
+
+.container .custom-progress h4 {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-weight: 500;
+  color: var(--color);
+  text-transform: uppercase;
+}
+
+.container .custom-progress::before {
+  content: "";
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+  border-radius: 0 100% 100% 0/50%;
+}
+
+.container .custom-progress::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  background: #222;
+}
+
+.container .custom-progress::before {
+  background: var(--color);
+  transform: rotate(calc(((var(--percent) - 50) * 0.01turn)));
+}
+
+/* if custom-progress under 50% */
+.container .custom-progress.less::before {
+  background: #444;
+  transform: rotate(calc(((var(--percent) - 0) * 0.01turn)));
+}
+
+/* -----------------------------Qualities Section----------------------------- */
+.qualities-section .collapse {
+  display: none;
+}
+
+.qualities-section .collapse.show {
+  display: block;
+}
+
+.qualities-section .card-header {
+  cursor: pointer;
+}
